@@ -39,11 +39,11 @@ res.status(200).send(getNoteData)
 }
 }
 
-// To update a specific Notess and update the status field or a particular field
+// To update a specific Notes and update the status field or a particular field
 export const updateNotes = async(req,res) =>{
 
 try {
-    const status = req.body.caseStatus
+    const status = req.body.status
     console.log("request",status)
 const updateNote = await notesModel.findByIdAndUpdate(req.params.id, {status:status})
 res.status(200).send(updateNote)

@@ -4,12 +4,12 @@ import { addNotes, deleteNotes, getNotes, getSpecificNotes, updateNotes } from "
 
 export const router = Router();
 
-router.post('/note', addNotes);
+router.post('/notes', addNotes);
 
-router.get('/note', getNotes);
+router.get('/notes', getNotes);
 
-router.get('/note/:id', getSpecificNotes);
+router.get('/notes/:id', getSpecificNotes);
 
-router.patch('/note/:id', updateNotes);
+router.patch('/notes/:id', updateNotes);
 
-router.delete('/note/:id', deleteNotes);
+router.delete('/notes/:id', deleteNotes);
